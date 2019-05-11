@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+p{
+  height: 40px;
+  padding-left: 10px;
+  
+}
+#para1{
+background-color: green;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+#para2{
+background-color: goldenrod;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+#para3{
+background-color:fuchsia;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+#para4{
+background-color: royalblue;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+#para5{
+background-color:goldenrod;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+#para6{
+background-color: grey;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+#para7{
+background-color: tomato;
+/* border: 2px solid ; */
+/* text-align:center; */
+}
+div{
+  width:50%;
+  margin: auto;
+}
+label{
+  /* background-color: black; */
+  float: right;
+  height: 40px;
+  background-color: white;
+  padding: 8px;
+}
+</style>
+
+<body>
+  <div>
+  <p id="para1"> javascript<label id="one">sdfsf</label> </p>
+  <p id="para2">python<label id="two">sdfsf</label></p>
+  <p id="para3">java<label id="three">sdfsf</label></p>
+  <p id="para4">ruby<label id="four">sdfsf</label></p>
+  <p id="para5">php<label id="five">sdfsf</label></p>
+  <p id="para6">c++<label id="six">sdfsf</label></p>
+  <p id="para7">css<label id="seven">sdfsf</label></p>
+</div>
+
+    <script>
+        // for(var i=0;i<array.length; i++){
+      
+        // }
+         setInterval(function(){ 
+  var rand1 = Math.random()*2+96;
+  var a =rand1.toFixed()
+
+  
+  var rand2 = Math.random()*2+97;
+  var b=rand2.toFixed()
+
+  
+  var rand3 = Math.random()*4+80;
+  var c=rand3.toFixed()
+
+
+
+  var rand4 = Math.random()*4+70;
+  var d=rand4.toFixed()
+  
+  var rand5 = Math.random()*5+(60);
+  var e=rand5.toFixed()
+
+  
+  var rand6 = Math.random()*3+50;
+  var f=rand6.toFixed()
+
+  
+  var rand7 = Math.random()*2+50;
+  var g=rand7.toFixed();
+console.log(g)
+  var array = [a,b,c,d,e,f,g];
+  console.log(array)
+  // array.sort();
+  // array.reverse()
+  
+
+
+  document.getElementById("one").innerHTML=array[0] +"%";
+  console.log("1=>"+array[0])
+
+  document.getElementById("two").innerHTML=array[1] +"%";
+  console.log("2=>"+array[1])
+
+  document.getElementById("three").innerHTML=array[2] +"%";
+  console.log("3=>"+array[2])
+
+  document.getElementById("four").innerHTML=array[3] +"%";
+  console.log("4=>"+array[3])
+
+  document.getElementById("five").innerHTML=array[4] +"%";
+  console.log("5=>"+array[4])
+
+  document.getElementById("six").innerHTML=array[5] +"%";
+  console.log("6=>"+array[5])
+
+  document.getElementById("seven").innerHTML=array[6] +"%";
+  console.log("7=>"+array[6])
+
+   document.getElementById("para1").style.width = array[0]+"%" ;
+   document.getElementById("para2").style.width = array[1]+ "%" ;
+   document.getElementById("para3").style.width = array[2]+ "%" ;
+   document.getElementById("para4").style.width = array[3]+ "%" ;
+   document.getElementById("para5").style.width = array[4]+ "%" ;
+   document.getElementById("para6").style.width = array[5]+ "%" ;
+   document.getElementById("para7").style.width = array[6] +"%";
+     console.log("=> working correct") 
+  
+
+     }, 100);
+         
+
+    </script>
+</body>
+</html>
